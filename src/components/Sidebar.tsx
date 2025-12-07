@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link, useLocation, useNavigate } from 'react-router-dom'
 import { useCart } from '../context/CartContext'
+import logo from '../../public/assets/logo1.png'
 
 const Sidebar: React.FC = () => {
   const { state } = useCart()
@@ -32,7 +33,7 @@ const Sidebar: React.FC = () => {
     <div className="fixed left-0 top-0 h-full w-64 bg-white/95 backdrop-blur-md shadow-xl border-r border-baby-pink/20 z-40">
       <div className="p-6">
         <Link to="/" className="flex items-center gap-3 mb-8">
-          <img src="/assets/logo1.png" alt="TweenShop Logo" className="w-10 h-10 rounded-lg shadow-sm" />
+          <img src={logo} alt="TweenShop Logo" className="w-10 h-10 rounded-lg shadow-sm" />
           <span className="font-bold text-lg font-nunito text-text-primary">TweenShop</span>
         </Link>
 

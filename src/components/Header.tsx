@@ -3,6 +3,7 @@ import { Link, useLocation } from 'react-router-dom'
 import { useCart } from '../context/CartContext'
 import { GoogleIcon } from '../ui/PaymentIcons'
 import { HomeIcon, CubeIcon, ClipboardDocumentListIcon, Cog6ToothIcon, ShoppingBagIcon, ArrowRightOnRectangleIcon } from '@heroicons/react/24/outline'
+import logo from '../../public/assets/logo1.png'
 
 const Header: React.FC = () => {
   const { state } = useCart()
@@ -23,7 +24,7 @@ const Header: React.FC = () => {
     <header className={`fixed top-0 left-0 right-0 z-50 ${isHome ? 'bg-transparent backdrop-blur-sm' : 'bg-white/90 backdrop-blur-md shadow-lg'}`}>
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
         <Link to="/" className="flex items-center gap-4">
-            <img src="/assets/logo1.png" alt="TweenShop Logo" className={`${isHome ? 'w-20 h-16' : 'w-12 h-12'} rounded-lg shadow-sm`} />
+            <img src={logo} alt="TweenShop Logo" className={`${isHome ? 'w-20 h-16' : 'w-12 h-12'} rounded-lg shadow-sm`} />
             <span className={`font-bold text-xl font-nunito ${isHome ? 'text-white drop-shadow-lg' : 'text-text-primary'}`}>TweenShop</span>
           </Link>
           <nav className="hidden md:flex items-center gap-4">

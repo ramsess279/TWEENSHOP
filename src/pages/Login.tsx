@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
+import logo from '../../public/assets/logo1.png'
 
 const Login: React.FC = () => {
   const [email, setEmail] = useState('')
@@ -24,7 +25,7 @@ const Login: React.FC = () => {
     <div className="min-h-screen flex">
       {/* Image à gauche */}
       <div className="hidden md:flex md:w-1/2 bg-gradient-to-br from-accent/20 to-accent/10 items-center justify-center">
-        <img src="/assets/logo1.png" alt="TweenShop" className="max-w-md rounded-lg" />
+        <img src={logo} alt="TweenShop" className="max-w-md rounded-lg" />
       </div>
 
       {/* Formulaire à droite */}
