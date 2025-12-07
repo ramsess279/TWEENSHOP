@@ -1,5 +1,6 @@
 import React from 'react'
-import logo from '../../public/assets/logo2.jpg'
+
+const logo = '/assets/logo2.jpg'
 
 const Footer: React.FC = () => {
   return (

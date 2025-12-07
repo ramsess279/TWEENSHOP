@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import logo from '../../public/assets/logo1.png'
+
+const logo = '/assets/logo1.png'
 
 const Login: React.FC = () => {
   const [email, setEmail] = useState('')

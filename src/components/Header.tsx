@@ -3,7 +3,8 @@ import { Link, useLocation } from 'react-router-dom'
 import { useCart } from '../context/CartContext'
 import { GoogleIcon } from '../ui/PaymentIcons'
 import { HomeIcon, CubeIcon, ClipboardDocumentListIcon, Cog6ToothIcon, ShoppingBagIcon, ArrowRightOnRectangleIcon } from '@heroicons/react/24/outline'
-import logo from '../../public/assets/logo1.png'
+
+const logo = '/assets/logo1.png'
 
 const Header: React.FC = () => {
   const { state } = useCart()

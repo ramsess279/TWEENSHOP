@@ -1,7 +1,8 @@
 import React from 'react'
 import { Link, useLocation, useNavigate } from 'react-router-dom'
 import { useCart } from '../context/CartContext'
-import logo from '../../public/assets/logo1.png'
+
+const logo = '/assets/logo1.png'
 
 const Sidebar: React.FC = () => {
   const { state } = useCart()
