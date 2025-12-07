@@ -1,0 +1,7 @@
+[
+  {"id": "c_001", "name": "Bébé", "slug": "bebe"},
+  {"id": "c_002", "name": "Maternité", "slug": "maternite"},
+  {"id": "c_003", "name": "Enfants", "slug": "enfants"},
+  {"id": "c_004", "name": "Jouets", "slug": "jouets"},
+  {"id": "c_005", "name": "Accessoires", "slug": "accessoires"}
+]

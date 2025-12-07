@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Design system variables - Baby theme */
+:root {
+  --accent: #FF6B9D; /* soft baby pink */
+  --bg: #FFF8F5; /* very light cream */
+  --panel: rgba(255,255,255,0.95);
+  --text-primary: #2D3748; /* soft dark gray */
+  --text-secondary: #718096; /* light gray */
+  --baby-blue: #87CEEB;
+  --baby-yellow: #FFFACD;
+  --baby-green: #98FB98;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  font-family: 'Nunito', Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  background: linear-gradient(135deg, var(--bg), #F0F8FF);
+  color: var(--text-primary);
+}
+
+/* Baby-themed card */
+.card {
+  background: var(--panel);
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(255, 107, 157, 0.1);
+  border: 1px solid rgba(255, 107, 157, 0.1);
+  padding: 1.5rem;
+}
+
+/* Utility: container */
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Button styles - Baby theme */
+.btn-muted {
+  background: rgba(255, 107, 157, 0.1);
+  border: 1px solid rgba(255, 107, 157, 0.2);
+  padding: 0.5rem 1rem;
+  border-radius: 12px;
+  color: var(--text-primary);
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.btn-muted:hover {
+  background: rgba(255, 107, 157, 0.15);
+  border-color: rgba(255, 107, 157, 0.3);
+  transform: translateY(-1px);
+}

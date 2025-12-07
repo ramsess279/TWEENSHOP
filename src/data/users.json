@@ -1,0 +1,8 @@
+[
+  {
+    "id": "user_001",
+    "email": "client@example.com",
+    "name": "Jean Dupont",
+    "role": "customer"
+  }
+]
